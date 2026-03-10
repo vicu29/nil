@@ -70,7 +70,7 @@
     .nav-cta:hover { background:#f5b840; transform:translateY(-1px); }
 
     /* HERO */
-    #hero { min-height:100vh; background: linear-gradient(155deg,rgba(11,22,35,0.93) 40%,rgba(30,74,130,0.72) 100%), url('white-truck.jpg') center/cover no-repeat; display:flex; align-items:center; padding:120px 0 80px; position:relative; overflow:hidden; }
+    #hero { min-height:100vh; background: linear-gradient(155deg,rgba(11,22,35,0.93) 40%,rgba(30,74,130,0.72) 100%), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1800&q=80') center/cover no-repeat; display:flex; align-items:center; padding:120px 0 80px; position:relative; overflow:hidden; }
     .hero-stripe { position:absolute; top:0; right:0; width:5px; height:100%; background:var(--accent); }
     .hero-badge { display:inline-flex; align-items:center; gap:0.6rem; border:1.5px solid var(--accent); padding:0.4rem 1rem; margin-bottom:1.6rem; }
     .hero-badge-dot { width:8px; height:8px; border-radius:50%; background:var(--accent); }
@@ -267,7 +267,7 @@
   <div class="container">
     <div class="why-grid">
       <div class="why-img-wrap">
-        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=700&q=80" alt="Flotta N.I.L. Trasporti su strada" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=700&q=80" alt="Camion Volvo flotta N.I.L. Trasporti" loading="lazy" />
         <div class="why-img-accent"></div>
         <div class="why-tag">Dal <span>2019</span> — In forte crescita</div>
       </div>
@@ -340,32 +340,28 @@
 <!-- CONTATTI -->
 <section id="contatti">
   <div class="container">
-    <div class="eyebrow">Parliamoci</div>
-    <h2>Richiedi un <em>Preventivo</em></h2>
-    <div class="contact-grid">
-      <div>
-        <p class="lead" style="margin-bottom:2rem;">Siamo a tua disposizione per valutare le tue esigenze logistiche e proporre la soluzione più conveniente per il tuo business.</p>
-        <div class="contact-details">
-          <div class="cdetail">
-            <div class="cicon">✉️</div>
-            <div><h4>Email</h4><p><a href="mailto:info@niltrasporti.it">info@niltrasporti.it</a></p></div>
-          </div>
-          <div class="cdetail">
-            <div class="cicon">🌐</div>
-            <div><h4>Sito Web</h4><p><a href="https://www.niltrasporti.it">www.niltrasporti.it</a></p></div>
-          </div>
-          <div class="cdetail">
-            <div class="cicon">🕐</div>
-            <div><h4>Orari Ufficio</h4><p>Lunedì – Venerdì: 08:00 – 18:00</p></div>
-          </div>
-        </div>
-        <div class="legal-box">
-          <strong>N.I.L. Trasporti S.r.l.</strong><br>
-          Partita IVA: IT05196930282<br>
-          Capitale Sociale: €9000,00 i.v.<br>
-          Attiva dal 2019 — niltrasporti.it
-        </div>
+    <div class="eyebrow">Contattaci</div>
+    <h2>Siamo a tua <em>Disposizione</em></h2>
+    <p class="lead">Per informazioni, tariffe e tratte disponibili, scrivici direttamente. Ti risponderemo entro 24 ore lavorative.</p>
+    <div class="contact-details" style="max-width:600px;">
+      <div class="cdetail">
+        <div class="cicon">✉️</div>
+        <div><h4>Email</h4><p><a href="mailto:info@niltrasporti.it">info@niltrasporti.it</a></p></div>
       </div>
+      <div class="cdetail">
+        <div class="cicon">🌐</div>
+        <div><h4>Sito Web</h4><p><a href="https://www.niltrasporti.it">www.niltrasporti.it</a></p></div>
+      </div>
+      <div class="cdetail">
+        <div class="cicon">🕐</div>
+        <div><h4>Orari Ufficio</h4><p>Lunedì – Venerdì: 08:00 – 18:00</p></div>
+      </div>
+    </div>
+    <div class="legal-box" style="max-width:600px; margin-top:2rem;">
+      <strong>N.I.L. Trasporti S.r.l.</strong><br>
+      Partita IVA: IT05196930282<br>
+      Capitale Sociale: €9.000,00 i.v.<br>
+      Attiva dal 2019 — niltrasporti.it
     </div>
   </div>
 </section>
@@ -384,15 +380,6 @@
 </footer>
 
 <script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const fb = document.getElementById('form-feedback');
-    fb.style.display = 'block';
-    e.target.reset();
-    setTimeout(() => fb.style.display = 'none', 7000);
-  }
-
-  // Scroll reveal
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
